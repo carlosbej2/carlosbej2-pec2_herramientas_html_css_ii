@@ -14,7 +14,6 @@
     ],
     "scss/no-global-function-names": null,
     "max-nesting-depth": 4,
-    "color-hex-length": "short",
     "alpha-value-notation": "number",
     "rule-empty-line-before": "always-multi-line",
     "no-duplicate-selectors": true,
