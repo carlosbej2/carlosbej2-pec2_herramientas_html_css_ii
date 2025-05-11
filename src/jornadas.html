@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" /><!-- do not remove this line! -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
     <title>Jornadas - Jornadas de Economía Circular 2025</title>
   </head>
   <body>
@@ -32,27 +32,27 @@
 
       <main class="c-article container py-5">
         <article>
-          <header>
+          <header data-aos="fade-up">
             <h1 class="mb-4">Bienvenidos a las Jornadas de Economía Circular 2025</h1>
           </header>
 
-          <section class="mb-4">
+          <section class="mb-4" data-aos="fade-up" data-aos-delay="100">
             <p>La economía circular es un modelo de producción y consumo que implica compartir, alquilar, reutilizar, reparar, renovar y reciclar materiales y productos existentes todas las veces que sea posible para crear un valor añadido.</p>
             <p>En estas jornadas, exploraremos estrategias innovadoras para implementar la economía circular en diferentes sectores industriales, con el objetivo de promover un crecimiento sostenible.</p>
           </section>
 
-          <section class="mb-4">
+          <section class="mb-4" data-aos="fade-left" data-aos-delay="200">
             <blockquote class="blockquote">
               "La economía circular no es una opción, es la única vía hacia un futuro sostenible."
             </blockquote>
           </section>
 
-          <section class="mb-4">
+          <section class="mb-4" data-aos="fade-up" data-aos-delay="300">
             <p>
               El Ayuntamiento de Alcoy reafirma su compromiso con la sostenibilidad mediante una serie de iniciativas enmarcadas en su Agenda 2025.
               Estas jornadas suponen un punto de encuentro para impulsar acciones concretas que promuevan la economía circular desde una perspectiva local, participativa y transformadora.
             </p>
-            <img src="./assets/images/jornada.png" alt="Taller práctico en las jornadas" class="img-fluid mb-3" />
+            <img src="./assets/images/jornada.png" alt="Taller práctico en las jornadas" class="img-fluid mb-3" data-aos="zoom-in" data-aos-delay="400" />
             <p>
               Durante los encuentros, se tratarán temáticas clave que permitirán a ciudadanos, empresas e instituciones adquirir herramientas y conocimientos para
               adaptarse a un modelo más eficiente, justo y respetuoso con el entorno.
@@ -60,7 +60,7 @@
             <p>
               Entre estos temas, encontraremos:
             </p>
-            <ul>
+            <ul data-aos="fade-right" data-aos-delay="500">
               <li>Estrategias de reducción de residuos y reutilización de recursos.</li>
               <li>Economía circular en los sectores de la moda, el textil y el consumo diario.</li>
               <li>Gestión inteligente de residuos urbanos y domésticos.</li>
@@ -70,22 +70,26 @@
               <li>Casos de éxito locales e internacionales en economía circular.</li>
               <li>Espacios de participación ciudadana y debate abierto.</li>
             </ul>
-            <div class="text-center">
+            <div class="text-center" data-aos="fade-up" data-aos-delay="600">
               <a href="ponentes.html" class="btn btn-primary btn-lg">¡Conoce a los ponentes de las Jornadas!</a>
             </div>
           </section>
 
-          <section class="mb-4">
+          <section class="mb-4" data-aos="zoom-in-up" data-aos-delay="300">
             <img src="./assets/images/infografia.png" alt="Conferencia sobre economía circular" class="img-fluid mb-3" />
             <p>Los participantes podrán asistir a talleres prácticos donde se aprenderán metodologías reales para aplicar los principios de la circularidad en proyectos empresariales y sociales.</p>
-            <div class="text-center">
+            <div class="text-center" data-aos="fade-up" data-aos-delay="500">
               <a href="./participa.html" class="btn btn-primary btn-lg">¡Quiero participar en los talleres!</a>
             </div>
-        </section>
+          </section>
         </article>
       </main>
       <include src="./views/footer.html"></include>
     </div>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

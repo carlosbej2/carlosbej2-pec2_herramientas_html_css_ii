@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" /><!-- do not remove this line! -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <title>Ponentes - Jornadas de Economía Circular 2025</title>
   </head>
   <body>
@@ -34,33 +34,33 @@
         <h1 class="mb-5">Ponentes</h1>
 
         <section class="c-speakers__grid">
-          <article class="c-speaker">
+          <article class="c-speaker" data-aos="fade-up" data-aos-delay="100">
             <img src="./assets/images/persona1.png" alt="Laura Gómez" />
             <h2 class="h5">Laura Gómez</h2>
             <p>Ingeniera medioambiental especializada en innovación circular en industrias textiles. Ha liderado más de 30 proyectos de reducción de residuos a nivel europeo.</p>
           </article>
-          <article class="c-speaker">
+          <article class="c-speaker" data-aos="fade-up" data-aos-delay="200">
             <img src="./assets/images/persona2.png" alt="Iván Martínez" class="mb-3" />
             <h2 class="h5">Iván Martínez</h2>
             <p>Consultor y divulgador. Colabora con entidades públicas para diseñar planes estratégicos de sostenibilidad en ayuntamientos e instituciones educativas.</p>
           </article>
-          <article class="c-speaker">
+          <article class="c-speaker" data-aos="fade-up" data-aos-delay="300">
             <img src="./assets/images/persona4.png" alt="Clara Puig" class="mb-3" />
             <h2 class="h5">Clara Puig</h2>
             <p>Diseñadora de producto enfocada en economía circular. Impulsa la reutilización de materiales en packaging y mobiliario urbano a través del ecodiseño.</p>
           </article>
-          <article class="c-speaker">
+          <article class="c-speaker" data-aos="fade-up" data-aos-delay="400">
             <img src="./assets/images/persona3.png" alt="Sergio Romero" class="mb-3" />
             <h2 class="h5">Sergio Romero</h2>
             <p>Periodista ambiental y coordinador de campañas de concienciación ciudadana sobre consumo responsable y reciclaje en ciudades medianas.</p>
           </article>
         </section>
 
-        <section>
+        <section class="mt-5" data-aos="fade-up">
           <table>
             <thead>
               <tr>
-                <th colspan="5" style="text-align: center;background-color: #009ecf ;color: #e0faff; padding:20px; font-size:22px;">
+                <th colspan="5" style="text-align: center; background-color: #009ecf; color: #e0faff; padding: 20px; font-size: 22px;">
                   <span>Programa de Ponencias</span>
                 </th>
               </tr>
@@ -115,5 +115,9 @@
       <include src="./views/footer.html"></include>
     </div>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
