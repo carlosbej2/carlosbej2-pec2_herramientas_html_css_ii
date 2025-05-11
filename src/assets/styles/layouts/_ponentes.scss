@@ -2,6 +2,7 @@
 @use "sass:color";
 
 .c-speakers {
+
   &__grid {
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +13,7 @@
       flex: 1 1 260px;
       max-width: 300px;
       background-color: #f5faff;
-      border: 1px solid #ddeeff;
+      border: 1px solid #def;
       padding: 1.5rem;
       border-radius: 1rem;
       text-align: center;
@@ -49,6 +50,18 @@ table {
     text-align: left;
   }
 
+  tbody tr {
+    border-bottom: 1px solid map-get($miami-blue, 200);
+
+    &:nth-child(even) {
+      background-color: map-get($miami-blue, 50);
+    }
+
+    &:hover {
+      background-color: map-get($miami-blue, 100);
+    }
+  }
+
   thead {
     background-color: map-get($miami-blue, 100);
 
@@ -70,20 +83,9 @@ table {
     }
   }
 
-  tbody tr {
-    border-bottom: 1px solid map-get($miami-blue, 200);
-
-    &:nth-child(even) {
-      background-color: map-get($miami-blue, 50);
-    }
-
-    &:hover {
-      background-color: map-get($miami-blue, 100);
-    }
-  }
-
   tfoot {
     font-style: italic;
+
     td {
       padding-top: 1.5rem;
       color: map-get($miami-blue, 900);
