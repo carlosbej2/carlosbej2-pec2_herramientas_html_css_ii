@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" /><!-- do not remove this line! -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Participa - Jornadas de Economía Circular 2025</title>
+  </head>
+  <body>
+    <div class="c-grid">
+      <header class="c-header container py-4 d-flex justify-content-between align-items-center">
+        <picture>
+          <source srcset="./assets/images/logo.png"  />
+          <a href="index.html" class="nav-link">
+            <img
+              src="./assets/images/logo.png"
+              alt="Logo Jornadas de Economía Circular"
+              class="c-header__logo"
+            />
+          </a>
+        </picture>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="jornadas.html" class="nav-link">Jornadas</a></li>
+            <li class="nav-item"><a href="ponentes.html" class="nav-link">Ponentes</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="c-participa">
+        <div class="c-participa__wrapper">
+          <!-- Columna izquierda -->
+          <section class="c-participa__info">
+            <h2>¿Por qué participar?</h2>
+            <p style="font-size: 22px; padding-top: 15px; text-align: justify; line-height:normal">
+              Las jornadas de economía circular son una oportunidad única para aprender, compartir ideas y transformar
+              el presente. Tu participación activa contribuye a construir un futuro más sostenible y resiliente para
+              las próximas generaciones.
+            </p>
+            <div class="c-carousel">
+              <div class="c-carousel__item">
+                <img src="./assets/images/carrousel5.png" alt="Imagen 1" />
+              </div>
+            </div>
+            <p style="font-size: 22px; padding-top: 15px; text-align: justify; line-height:normal">
+              Participar en estas jornadas significa unirte a una comunidad comprometida con el cambio, donde profesionales,
+              instituciones, estudiantes y ciudadanía trabajan conjuntamente en nuevas formas de producción, consumo y reciclaje.
+            </p>
+           <!--  <div class="c-carousel">
+              <div class="c-carousel__item">
+                <img src="/assets/images/carrousel2.png" alt="Imagen 1" />
+              </div>
+              <div class="c-carousel__item">
+                <img src="/assets/images/carrousel3.png" alt="Imagen 2" />
+              </div>
+            </div>
+            <p style="font-size: 22px; padding-top: 15px; text-align: justify; line-height:normal">
+              Además, podrás conocer de primera mano proyectos de éxito, casos de estudio reales y herramientas prácticas para
+              aplicar los principios de la economía circular en tu entorno personal o profesional.
+            </p>
+            <div class="c-carousel">
+              <div class="c-carousel__item">
+                <img src="/assets/images/carrousel4.png" alt="Imagen 1" />
+              </div>
+              <div class="c-carousel__item" aria-hidden="true">
+                <img src="/assets/images/carrousel5.png" alt="Imagen 2" />
+              </div>
+              <div class="c-carousel__item" aria-hidden="true">
+                <img src="/assets/images/carrousel6.png" alt="Imagen 2" />
+              </div>
+            </div>
+            <p style="font-size: 22px; padding-top: 15px; text-align: justify; line-height:normal">
+              Aprovecha esta oportunidad para ampliar tu red de contactos, adquirir nuevos conocimientos y ser parte del cambio.
+              ¡Tu implicación marca la diferencia!
+            </p>
+          -->
+         <!-- el formulario se redimensiona demasiado hacia abajo cuando añadimos mas contenido a la página
+              repasar por si es necesario subir alguna imagen mas -->
+          </section>
+
+
+
+          <!-- Columna derecha -->
+          <section class="c-participa__form">
+            <form name="contact" method="POST" data-netlify="true">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required />
+
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="telefono">Teléfono (opcional)</label>
+              <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" />
+
+              <label for="interes">Ýrea de interés</label>
+              <select id="interes" name="interes" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="residuos">Gestión de residuos</option>
+                <option value="movilidad">Movilidad sostenible</option>
+                <option value="educacion">Educación ambiental</option>
+                <option value="tecnologia">Tecnología circular</option>
+              </select>
+
+              <fieldset>
+                <legend>¿Cómo te gustaría participar?</legend>
+                <div>
+                  <input type="checkbox" id="asistente" name="rol" value="asistente" />
+                  <label for="asistente">Asistente</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="voluntario" name="rol" value="voluntario" />
+                  <label for="voluntario">Voluntario/a</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="ponente" name="rol" value="ponente" />
+                  <label for="ponente">Ponente</label>
+                </div>
+              </fieldset>
+
+              <label for="mensaje">Comentarios adicionales</label>
+              <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+              <button type="submit">Enviar</button>
+            </form>
+          </section>
+        </div>
+      </main>
+     <include src="./footer.html"></include>
+    </div>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

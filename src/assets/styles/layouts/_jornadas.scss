@@ -1,0 +1,34 @@
+@use "../variables" as *;
+@use "sass:color";
+
+.c-article {
+  article {
+    max-width: 70ch;
+    margin-inline: auto;
+    line-height: 1.8;
+
+    blockquote {
+      font-style: italic;
+      border-left: 4px solid $uoc-corporate;
+      padding-left: 1rem;
+      color: color.scale($uoc-corporate, $lightness: 20%);
+    }
+
+    ul {
+      list-style: disc inside;
+    }
+
+    section:has(blockquote) {
+      background-color: $uoc-bg;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    section:is(:nth-of-type(3), :nth-of-type(4)) {
+      background-color: #fdfdfd;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 0.25rem;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"/><!-- do not remove this line! -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preload" href="assets/images/logo.png" as="image" />
+    <title>Jornadas de Economía Circular 2025</title>
+  </head>
+  <body>
+    <div class="c-grid">
+      <header class="c-header container py-4 d-flex justify-content-between align-items-center">
+        <picture>
+          <source srcset="./assets/images/logo.png"/>
+          <img
+            src="./assets/images/logo.png"
+            alt="Logo Jornadas de Economía Circular"
+            class="c-header__logo"
+          />
+        </picture>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item"><a href="jornadas.html" class="nav-link">Jornadas</a></li>
+            <li class="nav-item"><a href="ponentes.html" class="nav-link">Ponentes</a></li>
+            <li class="nav-item"><a href="participa.html" class="nav-link">Participa</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="c-main text-center py-5">
+        <div class="c-main__image mb-4">
+          <img
+            src="./assets/images/portada2.png?width=950"
+            alt="Imagen representativa de las jornadas"
+            class="img-fluid"
+          />
+        </div>
+        <h1 class="c-main__title display-4 mb-3">Jornadas de Economía Circular 2025</h1>
+        <p class="c-main__desc lead">
+          <strong>Únete a talleres, charlas y actividades para transformar el presente desde la sostenibilidad.</strong>
+        </p>
+        <a href="jornadas.html" class="btn btn-primary btn-lg mt-4">¡Haz clic aquí para obtener más información!</a>
+      </main>
+      <include src="./footer.html"></include>
+    </div>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>
